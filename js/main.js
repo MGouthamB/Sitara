@@ -233,4 +233,8 @@ if (pageTitle.text === "ROSA- Restaurant") {
   window.addEventListener("keydown", boxModelFun);
   window.addEventListener("click", boxModelFun);
   boxModelArrow.addEventListener("click", boxModelFun);
+
+
+
+
 }
