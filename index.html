@@ -922,9 +922,11 @@
   <div class="modal">
     <div class="modal-content">
       <span class="close-button">×</span>
-      
+        <label for="mc-email" class="sent-message"></label>
       <div class="container">
+     
         <div class="card">
+          
           <div class="main">
             <div class="co-img">
               <img src="/img/logo.png" alt="" />
@@ -936,10 +938,15 @@
               <p>offers to your phone</p>
             </div>
           </div>
+          <form class="php-email-form">
           <div class="copy-button">
-            <input id="copyvalue" type="text" placeholder="Your phone number" />
-            <button onclick="copyIt()" class="copybtn">Send</button>
+            <input id="copyvalue" class="form-control" type="number" placeholder="Your phone number" name="phone" pattern="^\d{10}$" required/>
+            <button type="submit" class="copybtn">Send</button>
           </div>
+         
+          </form>
+          
+         
         </div>
       </div>
       
@@ -960,9 +967,9 @@
 
 
 <section id="menu">
-  
-  <div class="rope"><img src="https://notbigmuzzy.github.io/codepen/example1/rope.png" class="rope-left"><img
-    src="https://notbigmuzzy.github.io/codepen/example1/rope.png" class="rope-right"></div>
+  <!-- https://notbigmuzzy.github.io/codepen/example1/rope.png -->
+  <div class="rope"><img src="/img/light_1.png" class="rope-left"><img
+    src="/img/light_2.png" class="rope-right"></div>
   <div class="page1 page"><img src="/img/action.jpg" class="plate1">
     <div class="body-wrap">
       <h1 class="page1-title">Check out Our Exciting offers</h1>
@@ -971,9 +978,9 @@
         <br>
         <hr>
         <br>
-        <p style="color: white">Exciting news! Sitara Grand is opening its doors this month. Get ready to savor
-          authentic Indian flavors and embark on a culinary journey like no other. Stay tuned for our official opening
-          date - delicious experiences await!</p>
+        <p style="color: white">"Exciting news! Sitara Grand is opening its doors this month. Get ready to savor authentic Indian flavors and <span style="font-weight: 800; color: #fdbd39;">experience
+        royal dining</span>, embarking on a culinary journey like no other. Stay tuned for our official opening date - delicious
+        experiences await!"</p>
       </div>
     </div>
   </div>
@@ -984,10 +991,10 @@
         <div class="pg2-white-desc">
           <hr class="hr1">
           <h2>Dine with a Tollywood Celebrity</h2>
-          <hr class="hr4">
-          <hr class="hr5">
+          <!-- <hr class="hr4">
+          <hr class="hr5"> -->
           <br><br>
-          <p>Dine with a Tollywood Celebrity at Sitara Grand! Join us for an exclusive evening of star-studded elegance and exquisite cuisine. Indulge in Telugu culinary delights while mingling with a Tollywood icon. Limited seats available - reserve your spot today for an unforgettable experience. Follow us for event updates and surprises!</p>
+          <p>Dine with a Tollywood Celebrity at Sitara Grand! Join us for an exclusive evening of star-studded elegance and exquisite cuisine. Indulge in Telugu culinary delights while mingling with a Tollywood icon. Reserve your spot today for an unforgettable experience. Follow us for event updates and surprises!</p>
           <hr class="hr6">
         </div>
         <div class="pg2-photo-wrap">
@@ -1006,8 +1013,8 @@
         <div class="pg3-white-desc">
           <hr class="hr1">
           <h2>Unlimited Pani Puri</h2>
-          <hr class="hr4">
-          <hr class="hr5">
+          <!-- <hr class="hr4">
+          <hr class="hr5"> -->
           <br><br>
           <p>Unlimited Pani Puri at Sitara Grand! Dive into an endless burst of flavors at Sitara Grand. Enjoy the thrill of indulging in as many Pani Puris as your heart desires. Taste the authenticity, savor the spice, and relish every bite. Join us for the ultimate Pani Puri feast at Sitara Grand, where there's no stopping your cravings. Visit us today!</p>
           <hr class="hr6">
@@ -1022,8 +1029,8 @@
         <div class="pg4-white-desc">
           <hr class="hr1">
           <h2>Buy One Get One Thali Free</h2>
-          <hr class="hr4">
-          <hr class="hr5">
+          <!-- <hr class="hr4">
+          <hr class="hr5"> -->
           <br><br>
           <p>Thali Lovers, Rejoice! Buy One Get One Thali Free at Sitara Grand! Indulge in the flavors of India with our exquisite Thali dishes. For a limited time, enjoy two Thalis for the price of one. Bring a friend or savor both yourself. Don't miss out on this delectable offer at Sitara Grand. Visit us today and double the delight!</p>
           <hr class="hr6">
@@ -1042,8 +1049,8 @@
         <div class="pg4-white-desc">
           <hr class="hr1">
           <h2>Get Biryani For $5</h2>
-          <hr class="hr4">
-          <hr class="hr5">
+          <!-- <hr class="hr4">
+          <hr class="hr5"> -->
           <br><br>
           <p>Craving Biryani? Get it for just $5 at Sitara Grand! We're serving up the irresistible flavors of our signature Biryani for an unbeatable price. Don't miss this mouthwatering deal. Grab your $5 Biryani at Sitara Grand today and treat your taste buds</p>
           <hr class="hr6">
@@ -1061,8 +1068,8 @@
         <div class="pg4-white-desc">
           <hr class="hr1">
           <h2>Evening Snacks For $1</h2>
-          <hr class="hr4">
-          <hr class="hr5">
+          <!-- <hr class="hr4">
+          <hr class="hr5"> -->
           <br><br>
           <p>Evening Snack Delight for Just $1 at Sitara Grand! Join us for a scrumptious evening and savor a variety of delectable snacks for only $1 each. A perfect way to unwind and enjoy delicious bites with friends and family. Don't miss this unbeatable offer. Visit Sitara Grand today and make your evenings extra special!</p>
           <hr class="hr6">
@@ -1075,7 +1082,8 @@
   </div>
   <div class="page5 page">
     <div class="body-wrap">
-      <h3><span style="color:#fdbd39"> Many more exiting coupons</span>:<br>Enroll now in the form to get many exciting coupons</h3></div>
+      <h3><span style="color:#fdbd39"> Experience our royal dining</span>:<br> <br/>"Enroll now for exclusive discounts
+      and special offers that will add an extra layer of excitement to your dining experience!"</h3></div>
   </div>
 
 </section>
@@ -1095,9 +1103,9 @@
           <br>
           <hr style="border: 1px solid rgba(250, 191, 59, 0.5);margin: auto">
 
-          <p style="color: white">Exciting news! Sitara Grand is opening its doors this month. Get ready to savor
-          authentic Indian flavors and embark on a culinary journey like no other. Stay tuned for our official opening
-          date - delicious experiences await!</p>
+          <p style="color: white">"Exciting news! Sitara Grand is opening its doors this month. Get ready to savor authentic Indian flavors and <strong>experience
+          royal dining</strong>, embarking on a culinary journey like no other. Stay tuned for our official opening date - delicious
+          experiences await!"</p>
           <!--        <a href="#" class="btn">Click Me</a>-->
         </div>
       </div>
@@ -1115,7 +1123,7 @@
             Dine with a Tollywood Celebrity</h1>
           <hr style="border: 1px solid rgba(250, 191, 59, 0.5);margin: auto">
           <hr style="border: 1px solid rgba(250, 191, 59, 0.5);width: 60%;margin: auto">
-          <p style="color: #515151;">Dine with a Tollywood Celebrity at Sitara Grand! Join us for an exclusive evening of star-studded elegance and exquisite cuisine. Indulge in Telugu culinary delights while mingling with a Tollywood icon. Limited seats available - reserve your spot today for an unforgettable experience. Follow us for event updates and surprises!</p>
+          <p style="color: #515151;">Dine with a Tollywood Celebrity at Sitara Grand! Join us for an exclusive evening of star-studded elegance and exquisite cuisine. Indulge in Telugu culinary delights while mingling with a Tollywood icon. Reserve your spot today for an unforgettable experience. Follow us for event updates and surprises!</p>
           <!--        <a href="#" class="btn">Click Me</a>-->
         </div>
       </div>
@@ -1193,11 +1201,12 @@
         <div class="content">
           <h1
             style="font-weight: 700;font-size: 2rem;letter-spacing: 10px;color: #F4AF49 !important;font-family: 'Oswald';">
-            Many more exiting coupons</h1>
+            Experience our royal dining</h1>
           <br>
           <hr style="border: 1px solid rgba(250, 191, 59, 0.5);margin: auto">
 
-          <p style="color: white;font-size: 1.5rem;">Enroll now in the form to get many exciting coupons</p>
+          <p style="color: white;font-size: 1.5rem;">"Enroll now for exclusive discounts
+          and special offers that will add an extra layer of excitement to your dining experience!"</p>
           <!--        <a href="#" class="btn">Click Me</a>-->
         </div>
       </div>
@@ -1241,7 +1250,7 @@
 <!--Start Footer-->
 <footer>
   <div class="text">
-    <h2>ABOUT Sitara Grand</h2>
+    <h2>ABOUT US</h2>
     <div><i class="fas fa-asterisk"></i></div>
     <p>At Sitara Grand, we cherish every moment you spend with us. Whether you're visiting to savor our rich Indian
       flavors, sharing your valuable feedback through reviews, or celebrating your special day, we want to make each
@@ -1258,11 +1267,12 @@
       </div>
     </div>
     <div class="newsletter">
-      <h3>NewsLetter</h3>
-      <form method="post">
+      <h3>Sitara Grand</h3>
+      <p style="color: #bcbcbc;"> Experience our royal dining</p>
+      <!-- <form method="post">
         <input type="email" name="email" placeholder="Type Your Email">
         <i class="fas fa-envelope"></i>
-      </form>
+      </form> -->
     </div>
   </div>
 </footer>
@@ -1274,9 +1284,9 @@
        viewBox="0 0 160.7 61.5" enable-background="new 0 0 160.7 61.5" xml:space="preserve"><path fill="#262526" d="M80.3,61.5c0,0,22.1-2.7,43.1-5.4s41-5.4,36.6-5.4c-21.7,0-34.1-12.7-44.9-25.4S95.3,0,80.3,0c-15,0-24.1,12.7-34.9,25.4S22.3,50.8,0.6,50.8c-4.3,0-6.5,0,3.5,1.3S36.2,56.1,80.3,61.5z"></path></svg>
   <i class="fas fa-angle-double-up arrow-up"></i>
   <ul class="info">
-    <li>&copy; Sitara Grand 2017</li>
-    <li>13 Hanway Square, London</li>
-    <li>Tel: 71494563</li>
+    <li>&copy; Sitara Grand 2023</li>
+    <li>Frisco</li>
+    <li>Tel: +1 (682) 561-0823</li>
     <!--    <li>Handcrafted with love by <a href="#">Pixelgrade</a> Team</li>-->
   </ul>
   <ul class="CTA">
@@ -1414,17 +1424,59 @@
     window.addEventListener("click", windowOnClick);
 
 
-  const button = document.querySelector(".btn");
-  button.addEventListener("click", (e) => {
-    e.preventDefault;
-    button.classList.add("animate");
-    setTimeout(() => {
-      button.classList.remove("animate");
-    }, 600);
-  });
 
     
+  $('.php-email-form').submit(function (e) {
+    // alert("Thank you for writing us. Hold on! We will get back to you in no time")
+const array = {
+  0: "Private Dine In With Tollywood Celebrity",
+  1: "Dine with a Tollywood Celebrity",
+  2: "Unlimited Pani Puri",
+  3: "Buy One Get One Thali Free",
+  4: "Get Biryani For $5",
+  5: "Evening Snacks For $1",
+  6: "Sitara Special pulav for $5",
+  7: "Free drink",
+  8: "$10 off Coupon",
+  9: "25% off Coupon"
+}
+     e.preventDefault();
+    console.log("messe....")
 
+    $('.sent-message').append('Submitting...');
+    console.log($('form').serialize());
+    const data = {
+   message: "Congratulation 🎉🎉🎉 You got an exciting coupon: "+array[Math.floor(Math.random() * 10)] + ". Please redeem this coupon at our restaurant",
+   name: "Sitara Grand",
+   branch: "Frisco",
+   number: "+1"+$('form').serialize().split("=")[1],
+    }
+    console.log(data);
+    $.ajax({
+      url: 'https://revuesmart.herokuapp.com/users/message',
+      //  url:'http://localhost:443/users/mahasvana_user',
+      type: 'post',
+      data: data,
+      headers: {
+        "Authorization": "Hk3IqZ3crESzStZOh3wfdlKLrta4K3R"
+      },
+      success: function (msg, status) {
+        console.log(msg, status);
+        $('form')[0].reset();
+        $('.sent-message').empty();
+        if(msg == "sent"){
+        $('.sent-message').append('<i class="fa fa-check"></i> Thanks for booking an appointment with our clinic!');
+        }
+        else{
+          $('.sent-message').append(msg);
+        }
+      },
+       error: function (status){
+         $('.sent-message').empty();
+        $('.sent-message').append('☹️ Error Occurred, please try again by refreshing the page.');
+       }
+    });
+  });
  
   
 </script>

@@ -1090,7 +1090,7 @@ footer .newsletter i {
         font-size: 40px;
     }
     h2 {
-        font-size:70px
+        font-size:55px
     }
     header {
         padding: 0;
@@ -1347,4 +1347,14 @@ footer .newsletter i {
     50% {
         opacity: .6;
     }
+}
+
+
+.sent-message {
+    color: #141a46;
+    /* background: #18d26e; */
+   
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
 }

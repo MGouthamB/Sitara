@@ -55,6 +55,37 @@ links.forEach(link =>
   })
 );
 
+
+  // /* form 
+  //   * ------------------------------------------------------ */
+    
+  // $('.php-email-form').submit(function (e) {
+  //   // alert("Thank you for writing us. Hold on! We will get back to you in no time")
+  //    e.preventDefault();
+  //   console.log("messe....")
+
+  //   $('.sent-message').append('Submitting...');
+  //   $('form')[0].reset();
+  //   //  $('.subscribe-message1').append('Submitting...,...');
+  //   console.log($('form').serialize());
+   
+  //   $.ajax({
+  //     url: 'http://localhost:443/users/mahasvana_user',
+  //     //  url:'http://localhost:443/users/mahasvana_user',
+  //     type: 'post',
+  //     data: $('form').serialize(),
+  //     headers: {
+  //       "Authorization": "Hk3IqZ3crESzStZOh3wfdlKLrta4K3R"
+  //     },
+  //     success: function () {
+  //       $('form')[0].reset();
+  //       $('.sent-message').empty();
+  //       $('.sent-message').append('<i class="fa fa-check"></i> Thanks for booking an appointment with our clinic!');
+  //     }
+  //   });
+  // });
+
+
 // toggle hamburger menu button
 navToggle.addEventListener("click", () => {
   navToggle.classList.toggle("active");
@@ -229,6 +260,9 @@ if (pageTitle.text === "ROSA- Restaurant") {
       }
     }
   }
+
+
+
 
   window.addEventListener("keydown", boxModelFun);
   window.addEventListener("click", boxModelFun);
